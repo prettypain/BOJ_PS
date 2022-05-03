@@ -1,7 +1,1 @@
-san = int(input())
-joo = int(input())
-ha = int(input())
-
-cola = int(input())
-cider = int(input())
-print(min(san,joo,ha)+min(cola, cider)-50)
+print(min(int(input()),int(input()),int(input()))+min(int(input()), int(input()))-50)
