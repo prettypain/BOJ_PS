@@ -1,7 +1,2 @@
-n,m = map(int, input().split())
-if m in [1,2]:
-    print("NEWBIE!")
-elif n>=m:
-    print("OLDBIE!")
-else:
-    print("TLE!")
+n,m=map(int,input().split())
+print("NEWBIE!" if m in [1,2] else ("OLDBIE!" if n>=m else "TLE!"))
