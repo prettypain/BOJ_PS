@@ -1,7 +1,3 @@
 import sys
-input = sys.stdin.readline
-List = []
-for i in range(int(input())):
-    List.append(int(input()))
-for i in sorted(List):
-    print(i)
+input=sys.stdin.readline
+for i in sorted([int(input())for _ in range(int(input()))]):print(i)
