@@ -1,0 +1,1 @@
+for i in range(3):print(['E','A','B','C','D'][input().split().count('0')])
