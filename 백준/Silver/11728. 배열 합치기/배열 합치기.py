@@ -1,6 +1,6 @@
-a,b = map(int, input().split())
+import sys
+input = sys.stdin.readline
+input()
 List = []
-for i in range(2):
-    List+= list(map(int, input().split()))
-for i in sorted(List):
-    print(i,end=" ")
+for i in range(2): List+= list(map(int, input().split()))
+print(" ".join(map(str, sorted(List))))
