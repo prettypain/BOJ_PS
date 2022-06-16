@@ -1,0 +1,5 @@
+v = int(input())
+t = input()
+a = t.count("A")
+b = t.count("B")
+print("A" if a > b else "B" if b > a else "Tie")
