@@ -1,1 +1,1 @@
-print("OK" if sum(a:=list(map(int, input().split())))>99 else['Soongsil','Korea','Hanyang'][a.index(min(a))])
+print("OK"if sum(a:=list(map(int,input().split())))>99 else['Soongsil','Korea','Hanyang'][a.index(min(a))])
