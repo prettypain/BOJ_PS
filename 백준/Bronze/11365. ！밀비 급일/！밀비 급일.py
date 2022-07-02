@@ -1,1 +1,1 @@
-while(s:=input())!="END":print(s[::-1])
+while(s:=input())!='END':print(s[::-1])
