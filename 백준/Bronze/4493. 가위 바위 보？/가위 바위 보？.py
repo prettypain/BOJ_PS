@@ -1,4 +1,5 @@
-f=input
+import sys
+f=sys.stdin.readline
 for i in range(int(f())):
     ac,bc=0,0
     for j in range(int(f())):
