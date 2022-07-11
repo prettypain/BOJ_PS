@@ -1,3 +1,8 @@
+'''
+예전에 사분면 판별기를 만들었던 기억이 나네요...힝, 그떈 순순했는데..
+'''
+import sys
+input = sys.stdin.readline
 arr = [0,0,0,0,0]
 for _ in range(int(input())):
     x,y = map(int, input().split())
