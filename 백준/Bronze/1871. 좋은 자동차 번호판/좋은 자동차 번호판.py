@@ -1,3 +1,10 @@
+'''
+가중치부분이 조금 어려울뿐 나머지는 쉬움
+가중치는 뒤에서부터 앞으로 증가하므로
+반복문을 짤때 살짝 머리를 써야함
+'''
+import sys
+input = sys.stdin.readline
 for _ in range(int(input())):
     en, num = input().split("-")
     num = int(num)
