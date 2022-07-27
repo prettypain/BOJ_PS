@@ -1,0 +1,1 @@
+print("*"if (lst:=input().split()).count("0")==0 or lst.count("1")==0 else ["A","B","C"][lst.index("1"if lst.count("0")==2 else"0")])
