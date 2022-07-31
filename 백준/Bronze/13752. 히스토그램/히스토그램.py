@@ -1,6 +1,2 @@
-case_n = int(input())
-for case in range(case_n):
-    print_count = int(input())
-    for equals in range(print_count):
-        print("=",end="")
-    print()
+I=input
+print("\n".join(map(lambda x:x*"=",[int(I())for i in range(int(I()))])))
