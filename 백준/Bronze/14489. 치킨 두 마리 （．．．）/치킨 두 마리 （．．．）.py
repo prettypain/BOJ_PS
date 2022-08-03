@@ -1,4 +1,2 @@
-a,b = map(int, input().split())
-p = int(input())
-t = a+b-p*2
-print(a+b if t<0 else t)
+i=input;a,b=map(int,i().split())
+print(a+b if (t:=a+b-(p:=int(i()))*2)<0 else t)
