@@ -27,10 +27,10 @@ AC,BC = BC, AC+BC라는 식이 완성 된다.
 10 : [34, 55] B->BA, A->B
 규칙을 보면 피보나치 수가 생각이 난다.
 '''
-import sys
+from sys import stdin
 def fibo(n):
     memo = [0, 1]
     for i in range(n-1):
         memo.append(memo.pop(0)+memo[0])
     return memo
-print(" ".join(map(str, fibo(int(sys.stdin.readline())))))
+print(" ".join(map(str, fibo(int(stdin.readline())))))
