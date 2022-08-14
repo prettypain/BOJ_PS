@@ -20,17 +20,12 @@ AC,BC = BC, AC+BC라는 식이 완성 된다.
 3 : [1, 2] B->BA, A->B
 4 : [2, 3] B->BA, A->B
 5 : [3, 5] B->BA, A->B
-6 : [5, 8] B->BA, A->B
-7 : [8, 13] B->BA, A->B
-8 : [13, 21] B->BA, A->B
-9 : [21, 34] B->BA, A->B
-10 : [34, 55] B->BA, A->B
 규칙을 보면 피보나치 수가 생각이 난다.
+결론 :  A는 기존에 있던 B의 개수만큼, B는 기존에 있던 A,B의 개수만큼 추가 생성된다.
 '''
 from sys import stdin
 def fibo(n):
     memo = [0, 1]
-    for i in range(n-1):
-        memo.append(memo.pop(0)+memo[0])
+    for i in range(n-1): memo.append(memo.pop(0)+memo[0])
     return memo
 print(" ".join(map(str, fibo(int(stdin.readline())))))
