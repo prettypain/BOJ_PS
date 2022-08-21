@@ -1,0 +1,1 @@
+print("뭐야;" if len(list(filter(lambda x : "anj" == x, [input() for i in range(int(input()))]))) else "뭐야?")
