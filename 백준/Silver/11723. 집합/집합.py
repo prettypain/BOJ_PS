@@ -1,6 +1,5 @@
 from sys import stdin
 lst = [0]*20
-stdin.readline
 for i in range(int(stdin.readline())):
     command = stdin.readline().rstrip()
     if command.count(" "):
