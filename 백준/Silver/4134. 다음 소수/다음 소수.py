@@ -2,11 +2,10 @@
 솔직히 tle날줄 알았는데 생각보다 빨랐다.
 일단 내 풀이는 입력받은 n이 소수일때까지 +1해주고 소수이면 그때 출력한다.
 이게 끝이고 이 코드의 핵심은 is_prime()함수다.
-
-is_prime 함수는 시간복잡도가 sqrt(n)으로 굉장히 작다.
-n의 0.5제곱까지 해도 문제없는 이유는 
 '''
 import sys
+input = sys.stdin.readline
+print = sys.stdout.write
 def is_prime(n):#소수 판별
     '''
     *@param {int} n 소수 판별 대상
@@ -27,11 +26,8 @@ def is_prime(n):#소수 판별
         if n%i==0: return False
     return True
 
-input = sys.stdin.readline
-print = sys.stdout.write
 for i in range(int(input())):
     t = int(input())
-    while True:
-        if is_prime(t): break
+    while not is_prime(t):
         t+=1
     print(f'{t}\n')
