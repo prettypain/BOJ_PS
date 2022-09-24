@@ -1,3 +1,9 @@
+'''
+
+'''
+import sys
+input = sys.stdin.readline
+print = sys.stdout.write
 def sieve(n):
     lst = list(range(n+1))
     lst[1] = 0
@@ -7,4 +13,4 @@ def sieve(n):
     return list(filter(lambda x : x!=0, lst[t+1:]))
 
 while(t:=int(input()))!=0:
-    print(len(sieve(t*2)))
+    print(f'{len(sieve(t*2))}\n')
