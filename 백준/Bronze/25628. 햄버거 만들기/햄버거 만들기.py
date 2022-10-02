@@ -1,0 +1,1 @@
+print(min(map(lambda x, y : x//y, map(int, input().split()), [2, 1])))
