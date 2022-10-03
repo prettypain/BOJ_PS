@@ -1,20 +1,31 @@
-def seive(n):
+'''
+1,000,000 범위 까지 구하는데 에라토스테네스의 체로 2,197,839번 반복하면 구할 수 있다.
+그리고 백만 범위를 구한 그 리스트는 인덱스 번호가 곧 그 숫자의 소수 여부를 담고있다.
+리스트에 접근할 때 시간복잡도는 상수시간 O(1)이다.
+소수인지 판별해야 하는 수열의 길이는 최대 10,000개이므로 소수 판정 접근 시간까지
+계산하면 2,207,839으로 아무리 최악의 시나리오라 해도 1초 내에 모든 연산이 가능하다.
+
+그리고 최소 공배수는
+a1 a2 a3이 숫자일 때
+a1*a2*a3는 a1과 a2와 a3의 공배수임이 항상 보장된다.
+(이게 맞다는거는 항상 최소 공배수임이 맞다는 거겠네..)
+이때 입력되는 소수가 같은게 여러개일 수 있으므로 set 집합을 통해 중복되는 요소를 제거후
+모두 곱해서 출력한다.
+'''
+def seive(n): #에라토스테네스의 체 O(sqrt(n)) 정도
     lst = list(range(n+1))
     lst[1] = 0
     for i in range(2, int(n**0.5)+1):
         if lst[i] == 0: continue
         for j in range(i+i, n+1, i): lst[j] = 0
     return lst
-
 n = int(input())
 lst = seive(1000000)
-arr = []
+arr = [] #소수를 담을 배열
 for i in list(map(int, input().split())):
-    if lst[i]:
-        arr.append(i)
-if len(arr)==0:
-    print(-1)
-else:
-    res = 1
-    for i in set(arr): res *= i
-    print(res)
+    if lst[i]: arr.append(i) #소수인 경우 담는다.
+if len(arr)==0: print(-1) #소수가 하나도 없는 경우 -1출력
+else: #소수가 있는 경우
+    res = 1 #곱하기므로 1로 초기화
+    for i in set(arr): res *= i #소수 집합 생성후 모두 곱하기
+    print(res) #곱한 값을 출력
