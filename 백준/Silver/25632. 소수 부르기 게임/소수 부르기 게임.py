@@ -15,6 +15,8 @@
 
 1, 2를 계속 반복하면 된다. 끝~
 '''
+from sys import stdin
+input = stdin.readline
 def sieve(n):
     lst = list(range(n+1))
     lst[1] = 0
