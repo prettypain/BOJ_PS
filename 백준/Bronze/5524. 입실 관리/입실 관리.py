@@ -1,0 +1,1 @@
+I=input;print("\n".join([I().lower()for i in range(int(I()))]))
