@@ -1,3 +1,6 @@
+'''
+그냥 문자열 파싱하고 변환하고 출력하면 
+'''
 for case in range(int(input())):
     n = int(input())
     b = input().replace("I","1").replace("O","0")
