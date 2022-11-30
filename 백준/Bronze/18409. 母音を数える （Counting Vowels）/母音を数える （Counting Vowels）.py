@@ -1,0 +1,1 @@
+input();t=input();print(sum([t.count(i) for i in ["a", "i", "u", "e", "o"]]))
