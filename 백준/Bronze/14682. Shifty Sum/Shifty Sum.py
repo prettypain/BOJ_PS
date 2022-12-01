@@ -1,0 +1,1 @@
+n = input();print(int(n)+sum([int(n+"0"*i) for i in range(1, int(input())+1)]))
