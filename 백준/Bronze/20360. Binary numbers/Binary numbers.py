@@ -1,0 +1,1 @@
+print(*[i for i, v in enumerate(bin(int(input()))[2:][::-1]) if v=="1"],sep=" ")
