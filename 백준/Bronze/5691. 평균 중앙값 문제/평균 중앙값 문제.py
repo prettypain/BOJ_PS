@@ -1,0 +1,1 @@
+while(t:=list(map(int,input().split())))[0]:print(t[0]-(t[1]-t[0]))
