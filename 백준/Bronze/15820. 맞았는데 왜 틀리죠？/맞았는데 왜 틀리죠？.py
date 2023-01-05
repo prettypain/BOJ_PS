@@ -1,3 +1,5 @@
+from sys import stdin
+input = stdin.readline
 sample = True
 sys = True
 s1, s2 = map(int, input().split())
