@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split());print(1 if a+b==c or b+c==a or c+a==b else 2 if a*b==c or b*c==a or c*a==b else 3)
