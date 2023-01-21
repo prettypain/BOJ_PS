@@ -1,0 +1,1 @@
+print(*['god'+(l:=input())[l.index(" "):].replace(" ","")for i in range(int(input()))],sep="\n")
