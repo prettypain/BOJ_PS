@@ -1,0 +1,1 @@
+print(*["PERFECT LIFE"if(s:=sum([ord(i)-64 for i in input().replace(" ","")]))==100 else s for _ in range(int(input()))],sep="\n")
