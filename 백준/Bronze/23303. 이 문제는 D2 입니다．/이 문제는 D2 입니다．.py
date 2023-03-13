@@ -1,1 +1,1 @@
-print("D2"if"D2"in input().upper()else"unrated")
+print(["unrated","D2"]["D2"in input().upper()])
