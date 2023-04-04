@@ -1,0 +1,1 @@
+for _ in range(int(input())):string=input();print(f'{((t:=sum([int(i)for i in string])+int(string[10:])*10)+(1000 if t<1000 else 0))%10000:04d}')
